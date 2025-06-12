@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns – CityBau</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="image/logo-citybau.jpeg" alt="Firmenlogo von CityBau" class="logo">
+    <div class="hamburger" id="hamburger">
+  <span></span><span></span><span></span>
+</div>
+    <nav>
+  <ul id="nav-links">
+    <li><a href="index.html">Start</a></li>
+    <li><a href="ueber-uns.html" class="active">Über uns</a></li>
+    <li><a href="services.html">Dienstleistungen</a></li>
+    <li><a href="location.html">Standort</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
+  </header>
+
+  <section id="about-hero">
+    <div class="about-bg"></div>
+    <div class="about-overlay"></div>
+    <div class="about-hero-content fade-in">
+      <h1>Über <strong>CityBau</strong></h1>
+      <p>Kompetenz. Vertrauen. Fortschritt.</p>
+    </div>
+  </section>
+
+ <main class="about-container">
+    
+<section class="about-intro fade-in">
+  <p>Seit vielen Jahren steht CityBau für zuverlässige Bauprojekte, hohe Qualität und termintreue Umsetzung. Wir begleiten unsere Kunden von der Planung bis zur Fertigstellung.</p>
+</section>
+
+<section class="about-image-text fade-in">
+  <img src="image/team.jpg" alt="Das Team von CityBau">
+  <div>
+    <h2>Unser Team</h2>
+    <p>Unser Team besteht aus erfahrenen Architekten, Bauleitern und Facharbeitern, die mit Leidenschaft und Fachkompetenz an jedem Projekt arbeiten.</p>
+  </div>
+</section>
+
+<section class="about-values fade-in">
+  <h2>Unsere Werte</h2>
+  <ul class="value-list clean">
+    <li>
+      <img src="image/Verlässlichkeit.png" alt="Verlässlichkeit">
+      <span>Verlässlichkeit</span>
+    </li>
+    <li>
+      <img src="image/Transparente Kommunikation.png" alt="Transparente Kommunikation">
+      <span>Transparente Kommunikation</span>
+    </li>
+    <li>
+      <img src="image/Qualität bis ins Detail.png" alt="Qualität bis ins Detail">
+      <span>Qualität bis ins Detail</span>
+    </li>
+    <li>
+      <img src="image/Nachhaltigkeit und Verantwortung.png" alt="Nachhaltigkeit und Verantwortung">
+      <span>Nachhaltigkeit und Verantwortung</span>
+    </li>
+  </ul>
+</section>
+<section class="team-members fade-in">
+  <h2>Unsere Leitung</h2>
+  <div class="team-grid">
+    <div class="member fade-in">
+      <img src="image/unnamed.jpg" alt="Bauleiter Max Mustermann" loading="lazy">
+      <h3>Max Mustermann</h3>
+      <p>Bauleiter</p>
+    </div>
+    <div class="member fade-in">
+      <img src="image/unnamed.jpg" alt="Projektleitung Lisa Beispiel" loading="lazy">
+      <h3>Lisa Beispiel</h3>
+      <p>Projektleitung</p>
+    </div>
+    <div class="member fade-in">
+      <img src="image/unnamed.jpg" alt="Architekt Leon Muster" loading="lazy">
+      <h3>Leon Muster</h3>
+      <p>Architekt</p>
+    </div>
+  </div>
+</section>
+<section class="about-call fade-in">
+  <h2>Bereit für Ihr Projekt?</h2>
+  <p>Wir freuen uns, mit Ihnen Ihr Bauvorhaben umzusetzen – ganz gleich ob Sanierung, Wohnbau oder Gewerbe.</p>
+  <a href="kontakt.html" class="cta-button">Jetzt Kontakt aufnehmen</a>
+</section>
+  </main>
+<footer>
+  <p>&copy; 2025 <strong>CityBau – Alle Rechte vorbehalten</strong></p>
+  <small>
+    <a href="impressum.html">Impressum</a> ·
+    <a href="datenschutz.html">Datenschutz</a> ·
+    <a href="kontakt.html">Kontakt</a>
+  </small>
+</footer>
+<script src="script.js"></script>
+  <script>
+  // Fade‑In Animation
+  const fades = document.querySelectorAll('.fade-in');
+  const onScroll = () => {
+    fades.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) el.classList.add('visible');
+    });
+  };
+  window.addEventListener('scroll', onScroll);
+  document.addEventListener('DOMContentLoaded', onScroll);
+
+  // Parallax Background
+  const bg = document.querySelector('.about-bg');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    bg.style.transform = `translateY(${y * 0.3}px)`;
+  });
+</script>
+</body>
+</html>
