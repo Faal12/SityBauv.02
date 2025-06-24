@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutz – CityBau</title>
+  <meta name="description" content="Datenschutz und rechtliche Hinweise zur Datenverarbeitung bei CityBau GbR OS.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" type="image/png" href="image/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .datenschutz-hero {
+      position: relative;
+      min-height: 44vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background: url("image/ueber-bg.webp") center/cover no-repeat;
+      border-bottom-left-radius: 48px;
+      border-bottom-right-radius: 48px;
+      overflow: hidden;
+      margin-bottom: -30px;
+    }
+    .datenschutz-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(42,157,143,0.79) 0%, rgba(229,57,53,0.12) 90%);
+      z-index: 1;
+      backdrop-filter: blur(5px);
+    }
+    .datenschutz-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 40px 16px;
+    }
+    .datenschutz-hero-content h1 {
+      font-size: 2.7rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: 1.5px;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.13);
+      border-bottom: 3px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    .datenschutz-hero-content p {
+      font-size: 1.12rem;
+      color: #f3f3f3;
+      margin-top: 5px;
+      margin-bottom: 0;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.12);
+    }
+
+    .datenschutz-card {
+      background: var(--glass-bg);
+      box-shadow: var(--shadow);
+      border-radius: 22px;
+      padding: 2.2em 2em;
+      margin: 44px auto 20px;
+      max-width: 730px;
+      position: relative;
+      animation: fadeIn 1s;
+      backdrop-filter: blur(7px);
+      border: 1.5px solid #efefef;
+      font-size: 1.08rem;
+    }
+    .datenschutz-card h2, .datenschutz-card h3 {
+      color: var(--primary);
+      margin-top: 1.4em;
+      margin-bottom: 0.6em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.19rem;
+    }
+    .datenschutz-card h2:first-child {
+      margin-top: 0;
+      font-size: 1.34rem;
+    }
+    .datenschutz-card i {
+      color: var(--primary);
+    }
+    .datenschutz-card a {
+      color: var(--primary);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .datenschutz-card a:hover { text-decoration: underline; }
+    .datenschutz-cta {
+      text-align: center;
+      margin-top: 38px;
+    }
+    .datenschutz-cta .cta-button {
+      padding: 13px 34px;
+      font-size: 1.12rem;
+      color: #efefef;
+    }
+    @media (max-width: 800px) {
+      .datenschutz-hero-content h1 { font-size: 1.6rem; }
+      .datenschutz-card { padding: 1.1em 0.6em; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="image/logo-citybau.webp" loading="lazy" alt="Firmenlogo von CityBau" class="logo">
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="services.html">Dienstleistungen</a></li>
+      <li><a href="location.html">Standort</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html" class="active">Datenschutz</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="datenschutz-hero fade-in">
+  <div class="datenschutz-hero-content">
+    <h1>Datenschutzerklärung</h1>
+    <p>Ihre Daten. Unser Versprechen: Sicherheit &amp; Transparenz.</p>
+  </div>
+</section>
+
+<main class="about-container fade-in">
+  <section class="datenschutz-card">
+    <h2><i class="fas fa-lock"></i> Datenschutz auf einen Blick</h2>
+    <p>
+      Der Schutz Ihrer Daten ist uns wichtig. Nachfolgend finden Sie Informationen, wie wir personenbezogene Daten auf unserer Website erheben, verarbeiten und schützen.
+    </p>
+
+    <h3><i class="fas fa-user-shield"></i> Verantwortlicher</h3>
+    <p>
+      CityBau GbR OS<br>
+      Teutoburger-Waldstraße 59, 49124 Georgsmarienhütte<br>
+      <i class="fas fa-envelope"></i> <a href="mailto:city.bau.os@gmail.com">city.bau.os@gmail.com</a><br>
+      <i class="fas fa-phone"></i> <a href="tel:+4915560027007">+49 155 60027007</a>
+    </p>
+
+    <h3><i class="fas fa-database"></i> Erfassung und Nutzung Ihrer Daten</h3>
+    <ul>
+      <li>Beim Besuch unserer Website werden automatisch technische Daten (z.B. IP-Adresse, Browser, Uhrzeit) vom Hosting-Provider erfasst. Diese Daten dienen der sicheren Bereitstellung der Website und werden nicht zur Identifikation genutzt.</li>
+      <li>Kontaktieren Sie uns per Formular oder E-Mail, speichern wir die von Ihnen bereitgestellten Angaben (z.B. Name, E-Mail), um Ihre Anfrage zu bearbeiten. Es erfolgt keine Weitergabe an Dritte ohne Ihre ausdrückliche Einwilligung.</li>
+      <li>Wir setzen keine Analyse-Tools (wie Google Analytics) und kein externes Tracking ein.</li>
+    </ul>
+
+    <h3><i class="fas fa-user-secret"></i> Cookies</h3>
+    <p>
+      Unsere Website verwendet ausschließlich technisch notwendige Cookies, z.B. zur Sprachumschaltung oder Sicherheit. Es erfolgt keine Nutzung zu Werbe- oder Trackingzwecken.
+    </p>
+
+    <h3><i class="fas fa-user-check"></i> Ihre Rechte</h3>
+    <ul>
+      <li>Auskunft über gespeicherte personenbezogene Daten</li>
+      <li>Berichtigung unrichtiger Daten</li>
+      <li>Löschung („Recht auf Vergessenwerden“)</li>
+      <li>Einschränkung der Verarbeitung</li>
+      <li>Widerruf erteilter Einwilligungen</li>
+      <li>Beschwerderecht bei einer Aufsichtsbehörde</li>
+    </ul>
+
+    <h3><i class="fas fa-lock-open"></i> Datensicherheit</h3>
+    <p>
+      Wir treffen technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Manipulation und unberechtigtem Zugriff zu schützen.
+    </p>
+
+    <h3><i class="fas fa-file-signature"></i> Änderungen dieser Erklärung</h3>
+    <p>
+      Wir behalten uns vor, diese Datenschutzerklärung gelegentlich zu aktualisieren. Die jeweils aktuelle Version ist stets auf dieser Seite verfügbar.
+    </p>
+
+    <div class="datenschutz-cta">
+      <a href="index.html" class="cta-button"><i class="fas fa-arrow-left"></i> Zurück zur Startseite</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <small>
+    &copy; 2024 CityBau GbR OS. Alle Rechte vorbehalten.
+    <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+  </small>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>

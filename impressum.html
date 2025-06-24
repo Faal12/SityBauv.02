@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – CityBau</title>
+  <meta name="description" content="Impressum und rechtliche Hinweise zur CityBau GbR OS.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/png" href="image/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Специальные стили для impressum */
+    .impressum-hero {
+      position: relative;
+      min-height: 52vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background: url("image/ueber-bg.webp") center/cover no-repeat;
+      border-bottom-left-radius: 48px;
+      border-bottom-right-radius: 48px;
+      overflow: hidden;
+      margin-bottom: -30px;
+    }
+    .impressum-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(110deg, rgba(229,57,53,0.74) 0%, rgba(31,38,135,0.12) 90%);
+      z-index: 1;
+      backdrop-filter: blur(4px);
+    }
+    .impressum-hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 48px 16px;
+    }
+    .impressum-hero-content h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.12);
+      border-bottom: 3px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    .impressum-hero-content p {
+      font-size: 1.25rem;
+      color: #f1f1f1;
+      margin-top: 6px;
+      margin-bottom: 0;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.13);
+    }
+
+    .impressum-card {
+      background: var(--glass-bg);
+      box-shadow: var(--shadow);
+      border-radius: 22px;
+      padding: 2.5em 2em;
+      margin: 48px auto 20px;
+      max-width: 680px;
+      position: relative;
+      animation: fadeIn 1s;
+      backdrop-filter: blur(8px);
+      border: 1.5px solid #efefef;
+    }
+    .impressum-card h2, .impressum-card h3 {
+      color: var(--primary);
+      margin-top: 1.6em;
+      margin-bottom: 0.7em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.25rem;
+    }
+    .impressum-card h2:first-child {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .impressum-card i {
+      color: var(--primary);
+    }
+    .impressum-card a {
+      color: var(--primary);
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .impressum-card a:hover { text-decoration: underline; }
+    .impressum-cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .impressum-cta .cta-button {
+      padding: 14px 38px;
+      font-size: 1.13rem;
+    }
+    @media (max-width: 800px) {
+      .impressum-hero-content h1 { font-size: 2.1rem; }
+      .impressum-card { padding: 1.3em 0.7em; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="image/logo-citybau.webp" loading="lazy" alt="Firmenlogo von CityBau" class="logo">
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="services.html">Dienstleistungen</a></li>
+      <li><a href="location.html">Standort</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="impressum.html" class="active">Impressum</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="impressum-hero fade-in">
+  <div class="impressum-hero-content">
+    <h1>Impressum</h1>
+    <p>Transparenz &amp; Rechtssicherheit für Ihre Sicherheit</p>
+  </div>
+</section>
+
+<main class="about-container fade-in">
+  <section class="impressum-card">
+    <h2><i class="fas fa-info-circle"></i> Anbieterkennzeichnung gemäß § 5 TMG</h2>
+    <p>
+      <strong>CityBau GbR OS</strong><br>
+      Teutoburger-Waldstraße 59<br>
+      49124 Georgsmarienhütte<br>
+      Deutschland
+    </p>
+    <p>
+      <i class="fas fa-user-tie"></i> Vertreten durch: Max Mustermann, Lisa Beispiel
+    </p>
+    <p>
+      <i class="fas fa-phone"></i> Tel.: <a href="tel:+4915560027007">+49 155 60027007</a><br>
+      <i class="fas fa-envelope"></i> E-Mail: <a href="mailto:city.bau.os@gmail.com">city.bau.os@gmail.com</a>
+    </p>
+    <p>
+      <i class="fas fa-id-badge"></i> USt-IdNr.: DE123456789<br>
+      <i class="fas fa-globe"></i> Website: <a href="https://ВАШ_ДОМЕН/">citybau.de</a>
+    </p>
+    <hr style="margin:2em 0;">
+    <h3><i class="fas fa-shield-alt"></i> Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+    <p>
+      Max Mustermann<br>
+      Teutoburger-Waldstraße 59, 49124 Georgsmarienhütte
+    </p>
+    <h3><i class="fas fa-gavel"></i> Haftungsausschluss</h3>
+    <p>
+      Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
+      Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+    </p>
+    <h3><i class="fas fa-database"></i> Datenschutz</h3>
+    <p>
+      Ihre Daten werden gemäß DSGVO streng vertraulich behandelt. <br>
+      Ausführliche Informationen finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.
+    </p>
+    <div class="impressum-cta">
+      <a href="index.html" class="cta-button"><i class="fas fa-arrow-left"></i> Zurück zur Startseite</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <small>
+    &copy; 2024 CityBau GbR OS. Alle Rechte vorbehalten.
+    <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+  </small>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
