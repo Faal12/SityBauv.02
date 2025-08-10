@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neubau CityBau-Büro – Teutoburger-Wald-Straße 59</title>
+  <meta name="description" content="Aktuelles Projekt: Neubau des CityBau-Büros in Georgsmarienhütte. Fortschritt, Galerie, Kennzahlen und Lage.">
+  <link rel="icon" type="image/webp" href="image/favicon.webp">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .project-hero {
+      position: relative; min-height: 60vh; display:flex; align-items:center; justify-content:center;
+      color:#fff; text-align:center; overflow:hidden; border-bottom-left-radius:48px; border-bottom-right-radius:48px;
+      background: url("image/ort1.webp") center/cover no-repeat;
+    }
+    .project-hero::before { content:""; position:absolute; inset:0; background:linear-gradient(120deg, rgba(0,0,0,.55), rgba(229,57,53,.35)); z-index:0; backdrop-filter: blur(3px);}
+    .project-hero .inner { position:relative; z-index:1; padding:40px 16px;}
+    .project-hero h1 { font-size: clamp(2rem, 4.2vw, 3rem); font-weight:900; margin:0 0 10px; letter-spacing:1px; }
+    .project-hero p { font-size: clamp(1rem, 2.4vw, 1.15rem); color:#f3f3f3; margin:0; }
+
+    .project-container { max-width:1200px; margin: 50px auto; padding: 0 20px; }
+    .project-grid { display:grid; grid-template-columns: 1.15fr .85fr; gap:36px; }
+    .project-card {
+      background: var(--glass-bg); box-shadow: var(--shadow); border-radius:18px; padding:24px; backdrop-filter: blur(8px);
+      animation: fadeIn .7s ease both;
+    }
+    .project-card h2 { margin:0 0 12px; color: var(--primary); font-size:1.6rem; }
+    .meta { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:10px; }
+    .meta .item { background:#fff; border:1px solid #eee; border-radius:12px; padding:12px 14px; display:flex; gap:10px; align-items:center; }
+    .meta i { color: var(--primary); }
+
+    .timeline { 
+  position: relative;
+  padding-left: 26px;       /* место для вертикальной линии и точки */
+}
+.timeline::before {
+  left: 10px;               /* позиция вертикальной линии */
+}
+
+.step {
+  position: relative;
+  padding-left: 12px;       /* место для точки */
+  line-height: 1.5;
+}
+.step::before {
+  content: "";
+  position: absolute;
+  left: 0;                  /* точка слева от текста */
+  top: 0.55em;              /* выравниваем по строке */
+  width: 10px; 
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(229,57,53,.12);
+}
+    .gallery { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    .gallery img { width:100%; height:180px; object-fit:cover; border-radius:14px; box-shadow:0 8px 18px rgba(0,0,0,.08); cursor:pointer; transition: transform .25s; }
+    .gallery img:hover { transform: scale(1.02); }
+
+    .lightbox { position:fixed; inset:0; background:rgba(0,0,0,.9); display:none; align-items:center; justify-content:center; z-index:9999; }
+    .lightbox.show { display:flex; }
+    .lightbox img { max-width:92vw; max-height:88vh; border-radius:12px; }
+    .lightbox .close { position:absolute; top:20px; right:28px; font-size:1.8rem; color:#fff; cursor:pointer; }
+
+    .map-wrap iframe { width:100%; height:420px; border:0; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,0.15); }
+
+    .project-cta { text-align:center; margin: 44px 0 10px; }
+    .project-cta .cta-button { font-size:1.08rem; padding:12px 28px; }
+
+    @media (max-width: 900px) { .project-grid { grid-template-columns: 1fr; } }
+    .project-card {
+        background: #fff !important;  /* белый фон карточки */
+        color: #111 !important;       /* тёмный текст */
+    }
+
+    .project-grid {
+        background: transparent !important;
+    }
+
+    .project-card h2 {
+        color: var(--primary);
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <img src="image/logo-citybau.webp" loading="lazy" alt="Firmenlogo von CityBau" class="logo">
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  <nav>
+    <ul id="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="services.html">Dienstleistungen</a></li>
+      <li><a href="location.html">Standort</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="project-hero fade-in">
+  <div class="inner">
+    <h1>Neubau CityBau-Büro</h1>
+    <p>Teutoburger-Wald-Straße 59 · 49124 Georgsmarienhütte</p>
+    <a href="#details" class="cta-button" style="margin-top:18px;"><i class="fas fa-arrow-down"></i> Details ansehen</a>
+  </div>
+</section>
+<br><br>
+<main class="project-container fade-in" id="details">
+  <div class="project-grid">
+    <article class="project-card">
+      <h2><i class="fas fa-info-circle"></i> Projektüberblick</h2>
+      <p>
+        Unser neues Verwaltungs- und Ausführungsbüro entsteht in zentraler Lage von Georgsmarienhütte.
+        Der kompakte Baukörper mit moderner Fassade bietet funktionale Büroflächen, Besprechungsräume und Lagerbereiche
+        für die Projektabwicklung.
+      </p>
+      <div class="meta">
+        <div class="item"><i class="fas fa-location-dot"></i> Teutoburger-Wald-Straße 59, 49124 GMHütte</div>
+        <div class="item"><i class="fas fa-calendar-alt"></i> Bauzeit: 2025–2026 (laufend)</div>
+        <div class="item"><i class="fas fa-ruler-combined"></i> Nutzfläche: ~ 350–500 m² (kompakt)</div>
+        <div class="item"><i class="fas fa-leaf"></i> Energetik: effiziente Hülle, PV-Vorbereitung</div>
+      </div>
+    </article>
+
+    <aside class="project-card">
+      <h2><i class="fas fa-stream"></i> Baufortschritt</h2>
+      <div class="timeline">
+        <div class="step"><strong>Q2/2025:</strong> Planung & Genehmigung abgeschlossen</div>
+        <div class="step"><strong>Q3/2025 (aktuell):</strong> Fundament/Rohbau im Bau</div>
+        <div class="step"><strong>Q4/2025 (geplant):</strong> Fassade, Fenster, Dach</div>
+        <div class="step"><strong>Q1–Q2/2026 (geplant):</strong> TGA & Innenausbau, Außenanlagen</div>
+      </div>
+    </aside>
+  </div>
+<br><br><br>
+  <section class="project-card">
+    <h2><i class="fas fa-map"></i> Lage & Anfahrt</h2>
+    <p>Direkt an der Teutoburger-Wald-Straße – schnelle Anbindung an Osnabrück und die Region.</p>
+    <div class="map-wrap" style="margin-top:14px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.469802753195!2d8.0432682!3d52.2105031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba252316afec0b%3A0x74fae9d8ec7ad689!2sTeutoburger-Wald-Stra%C3%9Fe%2059%2C%2049124%20Georgsmarienh%C3%BCtte!5e0!3m2!1sde!2sde!4v1718506000000!5m2!1sde!2sde"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+      </iframe>
+    </div>
+    <div style="margin-top:12px;">
+      <a class="cta-button" href="https://www.google.com/maps/dir/?api=1&destination=Teutoburger-Waldstra%C3%9Fe+59%2C+49124+Georgsmarienh%C3%BCtte" target="_blank">
+        <i class="fas fa-route"></i> Route planen
+      </a>
+    </div>
+  </section>
+<br><br>
+  <section class="project-card">
+    <h2><i class="fas fa-check-circle"></i> Qualität & Ausstattung</h2>
+    <ul>
+      <li>Effiziente Gebäudehülle, PV-Vorbereitung, zeitgemäße Haustechnik</li>
+      <li>Flexible Grundrisse: Team-Büros, Meeting-Room, Sozialbereiche</li>
+      <li>Optimierte Logistikflächen für Material & Werkzeug</li>
+    </ul>
+  </section>
+
+  <div class="project-cta">
+    <a href="kontakt.html" class="cta-button"><i class="fas fa-envelope"></i> Rückfrage stellen</a>
+    <a href="services.html" class="cta-button" style="margin-left:10px;"><i class="fas fa-hard-hat"></i> Unsere Leistungen</a>
+  </div>
+</main>
+
+<footer>
+  <small>
+    © CityBau · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a>
+  </small>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Мини-лайтбокс
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<span class="close">✕</span><img alt="Bild">';
+  document.body.appendChild(lb);
+  const lbImg = lb.querySelector('img'); const lbClose = lb.querySelector('.close');
+  document.querySelectorAll('.gallery img').forEach(img=>{
+    img.addEventListener('click',()=>{
+      lbImg.src = img.dataset.full || img.src;
+      lb.classList.add('show'); document.body.style.overflow='hidden';
+    });
+  });
+  lb.addEventListener('click', (e)=>{ if(e.target===lb || e.target===lbClose){ lb.classList.remove('show'); document.body.style.overflow=''; }});
+</script>
+</body>
+</html>
